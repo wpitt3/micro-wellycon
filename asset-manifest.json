@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/micro-willycon/static/css/main.e6c13ad2.css",
+    "main.js": "/micro-willycon/static/js/main.e6254686.js",
+    "static/js/453.388de5e9.chunk.js": "/micro-willycon/static/js/453.388de5e9.chunk.js",
+    "index.html": "/micro-willycon/index.html",
+    "main.e6c13ad2.css.map": "/micro-willycon/static/css/main.e6c13ad2.css.map",
+    "main.e6254686.js.map": "/micro-willycon/static/js/main.e6254686.js.map",
+    "453.388de5e9.chunk.js.map": "/micro-willycon/static/js/453.388de5e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e6254686.js"
+  ]
+}
