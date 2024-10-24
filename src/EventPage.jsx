@@ -19,6 +19,12 @@ import {
     EmojiEvents
 } from '@mui/icons-material';
 
+const BannerImage = styled('div')({
+    position: 'relative',
+    width: '100%',
+    height: '300px',
+    overflow: 'hidden',
+});
 
 const EventPage = () => {
     const [showAlert, setShowAlert] = useState(false);
@@ -35,7 +41,33 @@ const EventPage = () => {
             {/* Hero Banner */}
             <Box
                 sx={{
-                    height: 400,
+                    height: 300,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    position: 'relative',
+                }}
+            >
+
+                <Box sx={{ width: '100%', margin: '0 auto' }}>
+                    <BannerImage>
+                        <img
+                            src={process.env.PUBLIC_URL + "/banner.webp"}
+                            alt="Banner"
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                            }}
+                        />
+                    </BannerImage>
+                </Box>
+
+            </Box>
+
+            <Box
+                sx={{
+                    height: 100,
                     background: 'linear-gradient(45deg, #6a1b9a 30%, #4a148c 90%)',
                     display: 'flex',
                     alignItems: 'center',
@@ -44,26 +76,12 @@ const EventPage = () => {
                     mb: 4
                 }}
             >
-                <Box sx={{ textAlign: 'center', color: 'white' }}>
-                    <Typography
-                        variant="h1"
-                        sx={{
-                            fontSize: { xs: '2.5rem', md: '4rem' },
-                            fontWeight: 'bold',
-                            mb: 2,
-                            animation: 'bounce 2s infinite'
-                        }}
-                    >
-                        🎲 Micro Will-ycon 🎲
-                    </Typography>
-                    <Typography variant="h4" sx={{ animation: 'pulse 2s infinite' }}>
-                        Where Fun Meets Friends!
-                    </Typography>
-                </Box>
+                <Typography variant="h4" sx={{ animation: 'pulse 2s infinite', color:"#fff", "text-align": "center" }}>
+                    Where Fun Meets Friends!
+                </Typography>
             </Box>
-
             <Box sx={{ textAlign: 'center', mb: 6 }}>
-                <img src={process.env.PUBLIC_URL + "/games.webp"} alt="people enjoying board games" width={300}/>
+                <img src={process.env.PUBLIC_URL + "/games2.webp"} alt="people enjoying board games" width={300}/>
             </Box>
             <Container maxWidth="lg">
 
@@ -155,14 +173,14 @@ const EventPage = () => {
                 </Card>
 
                 <Box sx={{ textAlign: 'center', mb: 6 }}>
-                    <img src={process.env.PUBLIC_URL + "/games3.jpeg"} alt="people enjoying board games" width="300"/>
+                    <img src={process.env.PUBLIC_URL + "/games1.webp"} alt="people enjoying board games" width="300"/>
                 </Box>
                 {/* CTA Button */}
                 <Box sx={{ textAlign: 'center', mb: 6 }}>
                     <Button
                         variant="contained"
                         size="large"
-                        onClick={handleClick}
+                        onTouchStart={handleClick}
                         sx={{
                             fontSize: '1.25rem',
                             py: 2,
@@ -187,9 +205,7 @@ const EventPage = () => {
                     )}
                 </Box>
             </Container>
-            <Box sx={{ textAlign: 'center', mb: 6 }}>
-                <img src={process.env.PUBLIC_URL + "/games2.jpeg"} alt="people enjoying board games" width="300"/>
-            </Box>
+
             {/* Footer */}
             <Box
                 sx={{
