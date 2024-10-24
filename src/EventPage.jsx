@@ -80,8 +80,18 @@ const EventPage = () => {
                     Where Fun Meets Friends!
                 </Typography>
             </Box>
-            <Box sx={{ textAlign: 'center', mb: 6 }}>
-                <img src={process.env.PUBLIC_URL + "/games2.webp"} alt="people enjoying board games" width={300}/>
+            <Box sx={{ width: '100%', margin: '0 auto', mb: 6}}>
+                <BannerImage>
+                    <img
+                        src={process.env.PUBLIC_URL + "/games2.webp"}
+                        alt="people enjoying board games"
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                        }}
+                    />
+                </BannerImage>
             </Box>
             <Container maxWidth="lg">
 
@@ -171,9 +181,18 @@ const EventPage = () => {
                         </Grid>
                     </Grid>
                 </Card>
-
-                <Box sx={{ textAlign: 'center', mb: 6 }}>
-                    <img src={process.env.PUBLIC_URL + "/games1.webp"} alt="people enjoying board games" width="300"/>
+                <Box sx={{ width: '100%', margin: '0 auto', mb: 6 }}>
+                    <BannerImage>
+                        <img
+                            src={process.env.PUBLIC_URL + "/games1.webp"}
+                            alt="people enjoying board games"
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                            }}
+                        />
+                    </BannerImage>
                 </Box>
                 {/* CTA Button */}
                 <Box sx={{ textAlign: 'center', mb: 6 }}>
